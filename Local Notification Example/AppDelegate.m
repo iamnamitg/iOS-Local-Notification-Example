@@ -21,11 +21,7 @@
 }
 
 -(void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings{
-    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
-    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:20]; //Enter the time here in seconds.
-    localNotification.alertBody = @"Your alert message";
-    localNotification.timeZone = [NSTimeZone defaultTimeZone];
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+ 
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
